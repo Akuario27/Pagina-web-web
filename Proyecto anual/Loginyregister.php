@@ -135,5 +135,129 @@ h2{text-align:center}
 </form>
 <?php endif; ?>
 
+   <style>
+    /* === RESET Y FUENTE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 1rem;
+}
+
+/* === FORMULARIOS === */
+form {
+  max-width: 380px;
+  width: 100%;
+  margin: 1rem auto;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* TITULOS */
+h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* === INPUTS === */
+input {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.4rem 0 1rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 2px #4facfe;
+}
+
+/* === BOTONES === */
+button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 242, 254, 0.4);
+}
+
+/* === ALERTAS === */
+.alert {
+  max-width: 420px;
+  width: 100%;
+  margin: 0.6rem auto;
+  padding: 0.9rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+.ok {
+  background: rgba(50, 205, 50, 0.2);
+  border: 1px solid #2ecc71;
+  color: #dfffe3;
+}
+
+.err {
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid #e74c3c;
+  color: #ffe5e5;
+}
+
+/* === ANIMACIÓN === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 480px) {
+  form {
+    padding: 1.2rem;
+    border-radius: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
 </body>
 </html>
+
