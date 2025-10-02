@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #d0f4f4;            /* Azul cian claro */
+  --text-color: #1a1a1a;          /* Texto oscuro para contraste */
+  --accent-color: #79e4ce;
+  --card-bg: #ffffff;
+  --hover-color: #13c395;
+  --radius: 10px;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-image: url(goldfish-12011.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+  line-height: 1.6;
+  text-align: center;
+
+}
+div{
+ display:  flex ;   
+}
+.img-logo{
+width: 200px;
+height: 150px;
+margin-bottom: 30px;
+}
+header {
+  background: #89e;
+  color: var(--accent-color);
+  padding: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 2px solid var(--accent-color);
+  
+}
+
+h1 {
+  margin: 40px auto;
+  max-width: 800px;
+  font-size: 1.7em;
+  color: #222;
+  padding: 25px;
+  background-color: #89e;
+  border-radius: var(--radius);
+  
+}
+
+button {
+  margin: 10px;
+  padding: 20px 30px;
+  background-color: var(--accent-color);
+  color: white;
+  border: black;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+footer {
+  margin-top: 0px;
+  background-color: #372f2f;  /* Negro fijo */
+  color: white;
+  padding: 65px;
+  border-top: 1px solid #444;
+}
+
+footer h2 {
+  color: var(--accent-color);
+}
+
+footer h3 {
+  color: #dddddd;
+}
